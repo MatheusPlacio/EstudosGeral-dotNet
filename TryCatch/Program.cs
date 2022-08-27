@@ -1,0 +1,3 @@
+﻿using TryCatch;
+
+Metodo.Excep();
