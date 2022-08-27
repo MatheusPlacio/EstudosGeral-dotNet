@@ -9,6 +9,7 @@ namespace LINQ
 
     public class Metodos
     {
+        //
         List<string> ListaNomes;
         List<int> ListaNumeros;
         Dictionary<string, double> ListaProdutos;
