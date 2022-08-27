@@ -2,5 +2,6 @@
 
 Metodos m = new Metodos();
 m.Estados();
+m.ListaDeNomes();
 
 Console.ReadLine();
