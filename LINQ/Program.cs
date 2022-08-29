@@ -1,6 +1,10 @@
 ﻿using LINQ;
 
 Metodos m = new Metodos();
-m.Estados();
+m.Lambda();
+Console.WriteLine();
 
+
+
+Console.WriteLine();
 Console.ReadLine();

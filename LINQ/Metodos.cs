@@ -93,7 +93,7 @@ namespace LINQ
                 Console.WriteLine(res);
             }
         }
-         public void ListaDeNomes()
+        public void ListaDeNomes()
         {           
             var resultado = from nome in ListaNomes where nome.Contains("a") select nome;
             foreach (var n in resultado)
@@ -138,5 +138,87 @@ namespace LINQ
                 }
             }
         }
+
+        public void OperadorDeAgregacao()
+        {
+            int con1 = ListaNomes.Count();
+            int con2 = (from nomes in ListaNomes where nomes.StartsWith("M") select nomes).Count();
+            Console.WriteLine(con1 + " nomes.");
+            Console.WriteLine(con2 + " nomes começando com a letra M.");
+
+        }
+
+        public void CalcularMedia()
+        {      
+            double media1 = ListaNumeros.Average();
+            Console.WriteLine(media1 + " média dos valores da lista de números.");
+
+            //Consulta com LINQ \/ 
+            var resultado = from numeros in ListaNumeros select numeros;
+            var media = resultado.Average();
+            Console.WriteLine(media);          
+        }       
+
+        public void Primeiro()
+        {
+            int num = ListaNumeros.First();
+            Console.WriteLine(num);
+            Console.WriteLine("=======================");
+
+            //LINQ
+            var first = from primeiro in ListaNumeros select primeiro;
+            var res = first.First();
+            
+            //LINQ
+            var last = from primeiro in ListaNumeros select primeiro;
+            var re = last.Last();
+
+            Console.WriteLine("O primeiro número da lista é o: " + res);
+            Console.WriteLine("O último número da lista é o: " + re);
+        }
+        public void Posicao()
+        {
+            //LINQ
+            var elemento = from posicao in ListaNumeros select posicao;
+            var resultado = elemento.ElementAt(3);
+            Console.WriteLine(resultado);
+        }
+
+        public void Lambda()
+        {
+            var cons1 = from nome in ListaNomes select nome;
+            foreach (var n in cons1)
+            {
+            Console.WriteLine(n);
+            }
+            Console.WriteLine("====================");
+
+            var cons2 = ListaNomes.Where(nome => nome.StartsWith("M"));
+            Console.WriteLine(cons2);
+            Console.WriteLine("=====================");
+
+            var cons3 = ListaNomes.OrderBy(nome => nome);
+            Console.WriteLine(cons3);
+            Console.WriteLine("=====================");
+
+            var cons4 = ListaNomes.OrderByDescending(nome => nome);
+            Console.WriteLine(cons4);
+            Console.WriteLine("=====================");
+
+
+            var cons5 = ListaEstados.GroupBy(e => e.Value);
+            foreach (var item in cons5)
+            {
+                foreach (var e in item)
+                {
+                    Console.WriteLine("     " + e.Key);
+                }
+            }
+            
+        }
+        //Avarege calcula média
+        //Sum calcula a soma
+        //Min pega o valor minímo, Max pega o valor máximo
+        
     }
 }
