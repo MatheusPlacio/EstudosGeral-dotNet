@@ -220,5 +220,6 @@ namespace LINQ
         //Sum calcula a soma
         //Min pega o valor minímo, Max pega o valor máximo
         
+       
     }
 }

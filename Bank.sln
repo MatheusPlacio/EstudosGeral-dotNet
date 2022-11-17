@@ -51,7 +51,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Queue", "Queue\Queue.csproj
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TryCatch", "TryCatch\TryCatch.csproj", "{E198523F-5F90-442C-BC8A-50978A7E7531}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ", "LINQ\LINQ.csproj", "{529E8F68-F35F-4A89-BD55-7B88584069AA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LINQ", "LINQ\LINQ.csproj", "{529E8F68-F35F-4A89-BD55-7B88584069AA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Fibonacci", "Fibonacci\Fibonacci.csproj", "{F2980340-2403-4A3D-97D8-B7026A5516C4}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -159,6 +161,10 @@ Global
 		{529E8F68-F35F-4A89-BD55-7B88584069AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{529E8F68-F35F-4A89-BD55-7B88584069AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{529E8F68-F35F-4A89-BD55-7B88584069AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2980340-2403-4A3D-97D8-B7026A5516C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2980340-2403-4A3D-97D8-B7026A5516C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2980340-2403-4A3D-97D8-B7026A5516C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2980340-2403-4A3D-97D8-B7026A5516C4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
