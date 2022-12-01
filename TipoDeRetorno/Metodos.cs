@@ -8,7 +8,10 @@ namespace TipoDeRetorno
 {
     public class Metodos
     {
-     
-        
+        public void Mul()
+        {
+          
+
+        }
     }
 }
