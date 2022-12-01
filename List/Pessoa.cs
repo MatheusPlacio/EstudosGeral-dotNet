@@ -11,7 +11,9 @@ namespace List
         public string Nome { get; set; }
         public int Idade { get; set; }
         public bool NomeSPC { get; set; }
+        public string CorDoOlho { get; set; }
         public DateTime DataSPC { get; set; }
+        public string CorDePele { get; set; }
 
     }
 }
