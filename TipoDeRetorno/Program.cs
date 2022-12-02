@@ -1,13 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using TipoDeRetorno;
 
-namespace TipoDeRetorno
-{
-    public class Program
-    {
+Metodos etodos = new Metodos();
+etodos.Nome(24);
 
-    }
-}
+Console.WriteLine(etodos);

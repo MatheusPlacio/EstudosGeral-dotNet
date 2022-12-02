@@ -9,6 +9,7 @@ namespace List
 {
     public class Metodos
     {
+        
         //public static void Nomes()
         // {
         //     string[] nomes = new string[3];
@@ -112,7 +113,8 @@ namespace List
             {
                 Console.WriteLine("Maior idade");
             }
-            else if (idade > 18) {
+            else if (idade > 18)
+            {
                 Console.WriteLine("Diferente");
             }
             else if (maiorIdade >= 18)
@@ -126,7 +128,8 @@ namespace List
             string valor = "Matheus";
             switch (valor)
             {
-                case "Talio": Console.WriteLine("Não é o cara!");
+                case "Talio":
+                    Console.WriteLine("Não é o cara!");
                     break;
                 case "Sandro":
                     Console.WriteLine("Não é o cara!");
@@ -137,7 +140,8 @@ namespace List
                 case "Matheus":
                     Console.WriteLine("É este!");
                     break;
-                default: Console.WriteLine("Não encontrei");
+                default:
+                    Console.WriteLine("Não encontrei");
                     break;
             }
         }
@@ -183,7 +187,7 @@ namespace List
                 {
                     Console.WriteLine($"Nome: {pessoas.Nome} -- Cor dos olhos: {pessoas.CorDoOlho} -- Raça: {pessoas.CorDePele}");
                 }
-            }           
+            }
         }
 
         public static void MesOrdenado()
@@ -201,7 +205,7 @@ namespace List
             order.Add(new Mes { MesId = 5, Nome = "Maio" });
             order.Add(new Mes { MesId = 8, Nome = "Agosto" });
             order.Add(new Mes { MesId = 11, Nome = "Novembro" });
-            
+
 
             var meses = order.OrderBy(x => x.MesId);
             foreach (var mes in meses)

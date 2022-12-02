@@ -8,10 +8,14 @@ namespace TipoDeRetorno
 {
     public class Metodos
     {
-        public void Mul()
+        public string Nome(int idade)
         {
-          
-
+            string Nome = "Matheus";
+            if (Nome.Contains("th") && idade >= 18)
+            {
+                Console.WriteLine("Certo");
+            }
+            return Nome;
         }
     }
 }

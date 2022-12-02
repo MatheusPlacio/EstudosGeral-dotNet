@@ -18,10 +18,10 @@ pessoas.Add(new Pessoa { Nome = "Clovis", Idade = 17, CorDoOlho = "Castanho", No
 pessoas.Add(new Pessoa { Nome = "Hugo", Idade = 17, CorDoOlho = "Verde", NomeSPC = false, CorDePele = "Negro" });
 pessoas.Add(new Pessoa { Nome = "Llian", Idade = 21, CorDePele = "Branca", CorDoOlho = "Castanho", NomeSPC = false});
 
-Metodos.MesOrdenado();
 
 
-
-
+Metodos.Data();
+Console.WriteLine();
+Metodos.Hora();
 
 Console.ReadLine();
