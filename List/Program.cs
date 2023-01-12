@@ -20,8 +20,6 @@ pessoas.Add(new Pessoa { Nome = "Llian", Idade = 21, CorDePele = "Branca", CorDo
 
 
 
-Metodos.Data();
-Console.WriteLine();
-Metodos.Hora();
+IA.Forca();
 
 Console.ReadLine();
